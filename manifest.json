@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Iconfont 一键复制到 PPT",
+  "version": "1.0",
+  "description": "在 iconfont 悬浮菜单添加一键复制 SVG 功能，方便粘贴到 PPT。",
+  "permissions": [
+    "clipboardWrite",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*.iconfont.cn/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*.iconfont.cn/*"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_end"
+    }
+  ]
+}

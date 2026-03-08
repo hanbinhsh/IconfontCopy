@@ -1,0 +1,26 @@
+/* 模仿 iconfont 原生按钮样式 */
+.icon-cover .cover-item.plugin-copy-btn {
+    cursor: pointer;
+    color: #666;
+    transition: color 0.3s;
+}
+
+.icon-cover .cover-item.plugin-copy-btn:hover {
+    color: #6040c6; /* 阿里紫 */
+}
+
+/* 简单的提示气泡 */
+.copy-toast {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    z-index: 9999;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
